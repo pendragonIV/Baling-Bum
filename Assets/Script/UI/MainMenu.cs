@@ -17,19 +17,8 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         tutorPanel.gameObject.SetActive(false);
-        gameLogo.GetComponent<Image>().fillAmount = 0;
-
-        gameLogo.GetComponent<CanvasGroup>().alpha = 0f;
-        gameLogo.GetComponent<CanvasGroup>().DOFade(1, 2f).SetUpdate(true);
-        
-    }
-
-    private void Update()
-    {
-        if(gameLogo.GetComponent<Image>().fillAmount < 1)
-        {
-            gameLogo.GetComponent<Image>().fillAmount += Time.deltaTime;
-        }
+        gameLogo.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 1700, 0);
+        gameLogo.GetComponent<RectTransform>().DOAnchorPos(new Vector2(0, 500), .6f, false).SetEase(Ease.OutElastic).SetUpdate(true);
     }
 
     public void ShowTutorPanel()
@@ -51,8 +40,8 @@ public class MainMenu : MonoBehaviour
         canvasGroup.alpha = 0f;
         canvasGroup.DOFade(1, .3f).SetUpdate(true);
 
-        rectTransform.anchoredPosition = new Vector3(0, 1700, 0);
-        rectTransform.DOAnchorPos(new Vector2(0, 200), .3f, false).SetEase(Ease.OutQuint).SetUpdate(true);
+        rectTransform.anchoredPosition = new Vector3(0, 400, 0);
+        rectTransform.DOAnchorPos(new Vector2(0, 0), .3f, false).SetEase(Ease.OutQuint).SetUpdate(true);
     }
 
     private IEnumerator FadeOut(CanvasGroup canvasGroup, RectTransform rectTransform)
@@ -60,13 +49,12 @@ public class MainMenu : MonoBehaviour
         canvasGroup.alpha = 1f;
         canvasGroup.DOFade(0, .3f).SetUpdate(true);
 
-        rectTransform.anchoredPosition = new Vector3(0, 200, 0);
-        rectTransform.DOAnchorPos(new Vector2(0, 1700), .3f, false).SetEase(Ease.OutQuint).SetUpdate(true);
+        rectTransform.anchoredPosition = new Vector3(0, 0, 0);
+        rectTransform.DOAnchorPos(new Vector2(0, 400), .3f, false).SetEase(Ease.OutQuint).SetUpdate(true);
 
         yield return new WaitForSecondsRealtime(.3f);
         guideLine.gameObject.SetActive(true);
         tutorPanel.gameObject.SetActive(false);
-
     }
 
 }
