@@ -31,6 +31,27 @@ MonoBehaviour:
     achivement: 3
   - pedestals:
     - pedestal: {fileID: 6212654042723684802, guid: 4f31dbd1271d9f14eb8d4482394ad9bd, type: 3}
+      position: {x: 1.5, y: 1.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: -1, y: 1, z: 1}
+      typeOfPedestal: 1
+    - pedestal: {fileID: 804805107919569839, guid: 7c3ef5e846452e14b8f11bda5d12af87, type: 3}
+      position: {x: -2, y: 2}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      typeOfPedestal: 1
+    - pedestal: {fileID: 804805107919569839, guid: 7c3ef5e846452e14b8f11bda5d12af87, type: 3}
+      position: {x: 0.6, y: -4}
+      rotation: {x: 0, y: 0, z: -90}
+      scale: {x: 1, y: 1, z: 1}
+      typeOfPedestal: 0
+    playerSpawnPosition: {x: 1.5, y: 4}
+    destinationPosition: {x: 1.5, y: -4}
+    isCompleted: 0
+    isPlayable: 1
+    achivement: 0
+  - pedestals:
+    - pedestal: {fileID: 6212654042723684802, guid: 4f31dbd1271d9f14eb8d4482394ad9bd, type: 3}
       position: {x: -2, y: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
@@ -69,7 +90,7 @@ MonoBehaviour:
     playerSpawnPosition: {x: -1.5, y: 3.5}
     destinationPosition: {x: 1.5, y: -4}
     isCompleted: 0
-    isPlayable: 0
+    isPlayable: 1
     achivement: 0
   - pedestals:
     - pedestal: {fileID: 6212654042723684802, guid: 4f31dbd1271d9f14eb8d4482394ad9bd, type: 3}
@@ -90,7 +111,7 @@ MonoBehaviour:
     playerSpawnPosition: {x: -1.5, y: 3.5}
     destinationPosition: {x: -1.5, y: -4}
     isCompleted: 0
-    isPlayable: 0
+    isPlayable: 1
     achivement: 0
   - pedestals:
     - pedestal: {fileID: 6212654042723684802, guid: 4f31dbd1271d9f14eb8d4482394ad9bd, type: 3}
@@ -111,7 +132,7 @@ MonoBehaviour:
     playerSpawnPosition: {x: 1.5, y: 3.5}
     destinationPosition: {x: -1, y: -4}
     isCompleted: 0
-    isPlayable: 0
+    isPlayable: 1
     achivement: 0
   - pedestals:
     - pedestal: {fileID: 804805107919569839, guid: 7c3ef5e846452e14b8f11bda5d12af87, type: 3}
@@ -132,7 +153,33 @@ MonoBehaviour:
     playerSpawnPosition: {x: 1, y: 3.5}
     destinationPosition: {x: -1, y: -4}
     isCompleted: 0
-    isPlayable: 0
+    isPlayable: 1
+    achivement: 0
+  - pedestals:
+    - pedestal: {fileID: 6212654042723684802, guid: 4f31dbd1271d9f14eb8d4482394ad9bd, type: 3}
+      position: {x: 1.85, y: 1.5}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      typeOfPedestal: 1
+    - pedestal: {fileID: 804805107919569839, guid: 7c3ef5e846452e14b8f11bda5d12af87, type: 3}
+      position: {x: 1, y: -4}
+      rotation: {x: 0, y: 0, z: 90}
+      scale: {x: 1, y: 1, z: 1}
+      typeOfPedestal: 0
+    - pedestal: {fileID: 804805107919569839, guid: 7c3ef5e846452e14b8f11bda5d12af87, type: 3}
+      position: {x: 1, y: -2}
+      rotation: {x: 0, y: 0, z: 90}
+      scale: {x: 1, y: 1, z: 1}
+      typeOfPedestal: 0
+    - pedestal: {fileID: 8147039911713245408, guid: fe0b9ab472bb5fc43b5f9829bbd0d792, type: 3}
+      position: {x: -2, y: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      typeOfPedestal: 0
+    playerSpawnPosition: {x: 1.5, y: 4}
+    destinationPosition: {x: 1.5, y: -4}
+    isCompleted: 0
+    isPlayable: 1
     achivement: 0
   - pedestals:
     - pedestal: {fileID: 6212654042723684802, guid: 4f31dbd1271d9f14eb8d4482394ad9bd, type: 3}
@@ -153,7 +200,7 @@ MonoBehaviour:
     playerSpawnPosition: {x: 1.5, y: 4}
     destinationPosition: {x: 1.5, y: -4}
     isCompleted: 0
-    isPlayable: 0
+    isPlayable: 1
     achivement: 0
   - pedestals:
     - pedestal: {fileID: 6212654042723684802, guid: 4f31dbd1271d9f14eb8d4482394ad9bd, type: 3}
@@ -174,5 +221,5 @@ MonoBehaviour:
     playerSpawnPosition: {x: -1.5, y: 4}
     destinationPosition: {x: -1.5, y: -2}
     isCompleted: 0
-    isPlayable: 0
+    isPlayable: 1
     achivement: 0

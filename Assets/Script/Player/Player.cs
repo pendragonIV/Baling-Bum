@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         circleBorder.Rotate(0, 0, 20 * Time.deltaTime);
-        if(transform.position.y < GameManager.instance.destination.transform.position.y - 1f)
+        if(transform.position.y < GameManager.instance.destination.transform.position.y - 1f && !GameManager.instance.IsGameWin() && !GameManager.instance.isGameLose())
         {
             StartCoroutine(WaitToLose());
         }

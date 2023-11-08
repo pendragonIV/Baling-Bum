@@ -17,10 +17,23 @@ public class GameScene : MonoBehaviour
     private Button ingameMenuButton;
     [SerializeField]
     private Text levelText;
-
+    [SerializeField]
+    private Transform tutorPanel;
     private void Start()
     {
         levelText.text = "Level " + (LevelManager.instance.currentLevelIndex + 1).ToString();
+        tutorPanel.gameObject.SetActive(false);
+        if(LevelManager.instance.currentLevelIndex + 1 == 1)
+        {
+            tutorPanel.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
+
+    public void HideTutorPanel()
+    {
+        tutorPanel.gameObject.SetActive(false);
+        Time.timeScale = 1;
     }
 
 

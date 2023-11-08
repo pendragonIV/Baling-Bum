@@ -28,16 +28,19 @@ public class RotateObject : MonoBehaviour
         DisablePedestal();
         if (this.transform.localRotation.eulerAngles.z == 0)
         {
+            holderCollider.enabled = false;
             this.gameObject.transform.DORotate(new Vector3(0, 0, 180), 0.5f).SetEase(Ease.OutElastic);
             pedestal.transform.DORotate(new Vector3(0, 0, 180), 0.4f).SetEase(Ease.OutElastic);
         }
         else if (this.transform.localRotation.eulerAngles.z == 180)
         {
+            holderCollider.enabled = false;
             this.gameObject.transform.DORotate(new Vector3(0, 0, 0), 0.5f).SetEase(Ease.OutElastic);
             pedestal.transform.DORotate(new Vector3(0, 0, 0), 0.4f).SetEase(Ease.OutElastic);
         }
         yield return new WaitForSeconds(.5f);
         EnablePedestal();
+        holderCollider.enabled = true;
     }
 
     private void DisablePedestal()

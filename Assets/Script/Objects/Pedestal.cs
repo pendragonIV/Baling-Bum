@@ -35,7 +35,7 @@ public class Pedestal : MonoBehaviour
 
     private void Update()
     {
-        if(stayTime > 2f)
+        if(stayTime > 2f && !GameManager.instance.isGameLose())
         {
             GameManager.instance.Lose();
         }
